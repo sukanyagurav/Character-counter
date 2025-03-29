@@ -1,11 +1,9 @@
 'use client';
 import Image from 'next/image';
 import { useTheme } from 'next-themes';
-import { useEffect, useState } from 'react';
 
 const Header = () => {
   const { theme, setTheme } = useTheme();
-
   return (
     <header className="max-w-[1200px] mx-auto p-8 px-4 w-full flex justify-between items-center gap-4">
       {theme && (
@@ -28,6 +26,7 @@ const Header = () => {
           height="22"
           priority
           unoptimized
+          alt="Change theme"
         />
       </button>
     </header>
