@@ -5,12 +5,12 @@
 The Character Counter is a React-based web application designed to analyze text efficiently. It helps users count characters, words, and sentences while providing additional features like letter density analysis and customizable settings.
 
 ### 🌐 **Links**
-- 🔗 [GitHub](https://github.com/sukanyagurav/Bento-grid)
-- 🚀 [Live URL](https://bento-grid5867.netlify.app/)
+- 🔗 [GitHub](https://github.com/sukanyagurav/Character-counter)
+- 🚀 [Live URL](https://charactercount5867.netlify.app/)
 
 ### 🖥 Character Counter desktop view   
 
-<img src="./public/design/desktop-design.jpg"/>
+<img src="./public/images/preview.jpg"/>
 
 
 <div align="center">
@@ -18,8 +18,7 @@ The Character Counter is a React-based web application designed to analyze text 
 </div>
 <div align="center">
 
-![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Zustand](https://img.shields.io/badge/zustand-%F8B533.svg?style=for-the-badge&logo=Sonner&logoColor=white) ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
-
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Next JS](https://img.shields.io/badge/nextjs-%2320232a.svg?style=for-the-badge&logo=Sonner&logoColor=white) 
 </div>
 
 
