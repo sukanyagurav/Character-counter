@@ -10,7 +10,7 @@ const ToggleButton = () => {
       onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
       className="p-2 bg-gray-200 dark:bg-[#2b2b37] rounded-md"
     >
-      {theme === 'dark' ? <img src="/images/icon-sun.svg" /> :  <img src="/images/icon-moon.svg" />}
+     <img src={`/images/icon-${theme == 'dark' ? 'sun' : 'moon'}.svg`} /> 
     </button>
   );
 };
