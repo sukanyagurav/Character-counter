@@ -1,26 +1,72 @@
-@import "tailwindcss";
+@import 'tailwindcss';
+@custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-purple: #d29efa;
+  --color-yellow: #ff9d00;
+  --color-red: #fe8158;
+  --color-gray-100: #22222c;
+  --shadow-3xl: var(--color-red) 0px 0px 0px 2px,
+    var(--color-red) 0px 4px 6px -1px, var(--color-red) 0px 1px 0px inset;
+  --shadow-2xl: var(--color-purple) 0px 2px 4px 0px,
+    var(--color-purple) 0px 2px 16px 0px;
+  --color-dark: #13141c;
+  --shadow-card:rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
 }
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-white  transition-colors duration-300 ease-in-out;
+}
+
+.dark body {
+  @apply bg-dark transition-colors duration-300 ease-in-out;
+}
+textarea {
+  resize: none;
+}
+label {
+  font-size: 15px;
+  padding-left: 1.5rem;
+}
+.results span {
+  display: block;
+}
+.inputs label,
+.inputs input[type='checkbox'] {
+  cursor: pointer;
+}
+.inputs input[type='checkbox'] {
+  @apply absolute opacity-0;
+}
+.inputs > div {
+  @apply flex items-center  relative;
+}
+label {
+}
+.inputs label::before {
+  content: '';
+  width: 1.2em;
+  height: 1.2em;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  border: 0.05em solid black;
+  border-radius: 0.15em;
+}
+.inputs input[type='checkbox']:focus + label::before {
+  box-shadow: 0 0 20px var(--color-purple);
+}
+.inputs input[type='checkbox']:checked + label::before {
+  content: '';
+  background-image: url('/images/icon-check.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: var(--color-purple);
+}
+.dark .inputs label::before {
+  border-color: white;
+}
+.totalCharacters{
+    @apply bg-[url('/images/pattern-character-count.svg')] bg-no-repeat bg-right;
 }
