@@ -1,36 +1,41 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+## Character Counter
 
-## Getting Started
+## Welcome! 👋
 
-First, run the development server:
+The Character Counter is a React-based web application designed to analyze text efficiently. It helps users count characters, words, and sentences while providing additional features like letter density analysis and customizable settings.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 🌐 **Links**
+- 🔗 [GitHub](https://github.com/sukanyagurav/Bento-grid)
+- 🚀 [Live URL](https://bento-grid5867.netlify.app/)
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🖥 Character Counter desktop view   
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+<img src="./public/design/desktop-design.jpg"/>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+<div align="center">
+    <h2>⚡ Tech stack used</h2>
+</div>
+<div align="center">
 
-To learn more about Next.js, take a look at the following resources:
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB) ![Zustand](https://img.shields.io/badge/zustand-%F8B533.svg?style=for-the-badge&logo=Sonner&logoColor=white) ![Framer](https://img.shields.io/badge/Framer-black?style=for-the-badge&logo=framer&logoColor=blue)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+</div>
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-## Deploy on Vercel
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## 📜 Features
+Users should be able to:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Analyze the character, word, and sentence counts for their text
+- Exclude/Include spaces in their character count
+- Set a character limit
+- Receive a warning message if their text exceeds their character limit
+- See the approximate reading time of their text
+- Analyze the letter density of their text
+- Select their color theme
+- View the optimal layout for the interface depending on their device's screen size
+- See hover and focus states for all interactive elements on the page
+
+## Author
+👩‍💻 Frontend Mentor - [@sukanyagurav](https://www.frontendmentor.io/profile/sukanyagurav) 

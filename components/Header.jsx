@@ -12,6 +12,8 @@ const Header = () => {
         alt="Character Count logo"
         width="240"
         height="240"
+        priority
+        unoptimized
       />
       <ToggleButton />
     </header>
